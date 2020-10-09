@@ -320,8 +320,8 @@ int main(int argc, char * argv[]) {
 
         if (op_result == RESULT_OK) {
             op_result = drv->ascendScanData(nodes, count);
-            float angle_min = DEG2RAD(0.0f);
-            float angle_max = DEG2RAD(359.0f);
+            float angle_min = DEG2RAD(-180.0f);
+            float angle_max = DEG2RAD(179.0f);
             if (op_result == RESULT_OK) {
                 if (angle_compensate) {
                     //const int angle_compensate_multiple = 1;
